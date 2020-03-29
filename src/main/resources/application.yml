@@ -1,0 +1,28 @@
+server:
+  port: 8090
+  address: 127.0.0.1
+
+name: abc
+#对象
+person:
+  name: ${name} #lisi
+  age: 20
+  user:
+    id: 1
+    sex: 男
+
+#行内对象
+person2: {name1: lisi, age2: 20}
+
+
+#数组
+teacher:
+  - 黄三
+  - 28
+#行内数组
+teacher1: [黄三,28]
+
+#纯量
+msg1: 'hello \n  world'#单引号忽略转义
+msg2: "hello \n  world"#双引号识别转义
+
